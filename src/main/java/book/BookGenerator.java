@@ -26,7 +26,7 @@ public class BookGenerator {
                 .format(faker.options().option(Book.Format.class))
                 .publisher(faker.book().publisher())
                 .publicationDate(localDate)
-                .pages(faker.number().numberBetween(0,3000))
+                .pages(faker.number().numberBetween(1,3000))
                 .available(faker.bool().bool())
                 .build();
 
